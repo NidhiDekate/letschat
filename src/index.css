@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Chatroom{
+    height: 100vh !important ;
+}
+.chatDialogue{
+   height: auto !important;
+   margin: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ChatScreen{
+   height: 85%;
+}
+.send-btn{
+    margin: 10px;
+    width: 100%;
+    height: 80%;
+}
+.form-control{
+    width: 100%;
+    margin: 10px;
+}
+/* UserSection */
+.search-input{
+    width: 75%;
+    height: 40px !important;
+}
+.search-btn{
+    width: auto;
+}
+/* media query */
+@media only screen and (max-width: 600px){
+    .chat_container{
+        margin: 0 !important;
+    }
+    .ChatScreen{
+        height: auto
+     }  
+     .chatMenu{
+        position: absolute;
+        bottom: 0;
+    }
+    .send-btn{
+        width: 100%;
+    }
+    .abc{
+        height: 100px;
+        background: red !important;
+    }
 }
